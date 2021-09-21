@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pasta_menu2"
+    android:id="@+id/geojsonid"
+    tools:context=".geojsonview.GeojsonviewActivity">
+
+
+    <ScrollView
+        android:id="@+id/activity_main_layout_map_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/activity_main_text_open_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/geojsonview1"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/activity_geojsonview"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/geojsonview1"
+                android:onClick="openGoogleMaps"
+                android:text="@string/activity_geojsonview_open_gmaps" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/geojsonview1"
+                    android:gravity="center"
+                    android:text="Layer color:"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/activity_main_color_picked"
+                    android:layout_width="300dp"
+                    android:layout_height="32dp"
+                    android:background="#000000"
+                    android:onClick="onLayerColorPressed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/geojsonview1"
+                    android:onClick="onBackPressed"
+                    android:text="@string/activity_geojsonview_back"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="7"
+                    android:backgroundTint="@color/geojsonview1"
+                    android:onClick="onAddJsonPressed"
+                    android:text="@string/activity_geojsonview_add"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pasta_navbar">#3A6351</color>
+    <color name="pasta_menu">#5F939A</color>
+    <color name="pasta_menu2">#5F939A</color>
+    <color name="pasta_menu3">#A0937D</color>
+    <color name="geojsonview1">#e7ddbd</color>
+    <color name="geojsonview2">#163a38</color>
+    <color name="geojsonview3">#366055</color>
+
+</resources>

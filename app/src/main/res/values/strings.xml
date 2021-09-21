@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GisAndroid</string>
+    <string name="peta">Peta</string>
+    <string name="geojsonview">GeoJsonview</string>
+    <string name="kecamatan_palaran">Kecamatan Palaran</string>
+    <string name="lahan_pertanian">Lahan Pertanian</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="activity_geojsonview_open_gmaps">OPEN MAPS</string>
+    <string name="activity_geojsonview_back">BACK</string>
+    <string name="activity_geojsonview_add">Add</string>
+    <string name="activity_geojsonview_ask_permission">Ask Permission</string>
+    <string name="title_activity_googlemaps">Map</string>
+    <string name="geojson_opener_unable_to_read">Unable to read</string>
+    <string name="geojson_opener_unable_to_parse">unable to parse</string>
+    <string name="activity_geojsonview_open_multiple">open multiple</string>
+    <string name="activity_geojsonview">GeoJsonview</string>
+    <string name="kelurahan_title">kelurahan title</string>
+    <string name="no_kelurahan">nokelurahan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_peta">Map</string>
+    <string name="geojson_url">https://skripsi.sigpalaran.com/sawah</string>
+
+</resources>
