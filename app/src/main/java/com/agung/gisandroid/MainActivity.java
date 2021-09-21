@@ -1,7 +1,6 @@
 package com.agung.gisandroid;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -12,8 +11,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.agung.gisandroid.geojsonview.GeojsonviewActivity;
-import com.agung.gisandroid.peta.geojson;
+import com.agung.gisandroid.peta.MapsFragment;
+import com.agung.gisandroid.peta.Mapsjagung;
+import com.agung.gisandroid.peta.Mapspadiladang;
 import com.google.android.material.navigation.NavigationView;
 
 import org.jetbrains.annotations.NotNull;
@@ -37,20 +37,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new MapsFragment()).commit();
+            navigationView.setCheckedItem(R.id.peta);
+        }
+
     }
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
-
         switch (item.getItemId()) {
-            case R.id.peta_acty:
-                Intent i = new Intent(MainActivity.this, geojson.class);
-                startActivity(i);
+            case R.id.peta:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new MapsFragment()).commit();
                 break;
 
-            case R.id.geojsonid:
-                i = new Intent(MainActivity.this, GeojsonviewActivity.class);
-                startActivity(i);
+            case R.id.jagung:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new Mapsjagung()).commit();
+                break;
+
+            case R.id.padi_ladang:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new Mapspadiladang()).commit();
+                break;
+
+            //case R.id.geojsonid:
+               // intent = new Intent(MainActivity.this, GeojsonviewActivity.class);
+               // startActivity(i);
 
         }
         drawer.closeDrawer(GravityCompat.START);

@@ -4,11 +4,14 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/peta_acty"
+            android:id="@+id/peta"
             android:title="@string/peta" />
         <item
-            android:id="@+id/geojsonid"
-            android:title="@string/geojsonview" />
+            android:id="@+id/jagung"
+            android:title="@string/jagung" />
 
+        <item
+            android:id="@+id/padi_ladang"
+            android:title="@string/padiladang" />
     </group>
 </menu>
