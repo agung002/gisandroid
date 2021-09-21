@@ -13,7 +13,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.agung.gisandroid.geojsonview.GeojsonviewActivity;
-import com.agung.gisandroid.peta.PetaActivity;
+import com.agung.gisandroid.peta.geojson;
 import com.google.android.material.navigation.NavigationView;
 
 import org.jetbrains.annotations.NotNull;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.peta_acty:
-                Intent i = new Intent(MainActivity.this, PetaActivity.class);
+                Intent i = new Intent(MainActivity.this, geojson.class);
                 startActivity(i);
                 break;
 
