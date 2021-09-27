@@ -14,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.agung.gisandroid.peta.MapsFragment;
 import com.agung.gisandroid.peta.Mapsjagung;
 import com.agung.gisandroid.peta.Mapspadiladang;
+import com.agung.gisandroid.peta.intersection;
 import com.google.android.material.navigation.NavigationView;
 
 import org.jetbrains.annotations.NotNull;
@@ -62,6 +63,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.padi_ladang:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Mapspadiladang()).commit();
+                break;
+
+            case R.id.intersection:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new intersection()).commit();
                 break;
 
             //case R.id.geojsonid:

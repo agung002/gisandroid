@@ -23,5 +23,12 @@
     <string name="geojson_url">https://skripsi.sigpalaran.com/sawah</string>
     <string name="jagung">Jagung</string>
     <string name="padiladang">Padi Ladang</string>
+    <string name="sawah">Sawah</string>
+    <string name="fitur">fitur</string>
+    <string name="englan_style">#FF5733</string>
+    <string name="englan_stylestook">#42C0FB</string>
+    <string name="mpoly">#ffffff</string>
+    <string name="mpolystok">#8a8a8a</string>
+    <string name="intersection">Intersection</string>
 
 </resources>
